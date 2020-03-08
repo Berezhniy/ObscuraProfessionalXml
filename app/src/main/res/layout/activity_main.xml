@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ice_blue"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/indentation_8"
+        android:layout_marginVertical="@dimen/indentation_16">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constBag"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_params_50"
+            android:background="@drawable/background_white"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivBag"
+                android:layout_width="@dimen/view_params_20"
+                android:layout_height="@dimen/view_params_18"
+                android:layout_marginStart="@dimen/indentation_16"
+                android:background="@color/image_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvBag"
+                style="@style/styleBlueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/indentation_16"
+                android:text="Choose your speciality"
+                app:layout_constraintBottom_toBottomOf="@id/ivBag"
+                app:layout_constraintStart_toEndOf="@+id/ivBag"
+                app:layout_constraintTop_toTopOf="@+id/ivBag" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constDocument1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_params_50"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_white"
+            app:layout_constraintTop_toBottomOf="@id/constBag">
+
+            <ImageView
+                android:id="@+id/ivDocument1"
+                android:layout_width="@dimen/view_params_20"
+                android:layout_height="@dimen/view_params_16"
+                android:layout_marginStart="@dimen/indentation_16"
+                android:background="@color/image_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDocument1"
+                style="@style/styleBlueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/indentation_16"
+                android:text="Add your ceftificates"
+                app:layout_constraintBottom_toBottomOf="@id/ivDocument1"
+                app:layout_constraintStart_toEndOf="@+id/ivDocument1"
+                app:layout_constraintTop_toTopOf="@+id/ivDocument1" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constDocument2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:background="@drawable/background_white"
+            app:layout_constraintTop_toBottomOf="@id/constDocument1">
+
+            <ImageView
+                android:id="@+id/ivDocument2"
+                android:layout_width="@dimen/view_params_20"
+                android:layout_height="@dimen/view_params_16"
+                android:layout_marginStart="@dimen/indentation_16"
+                android:layout_marginTop="@dimen/indentation_8"
+                android:background="@color/image_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDocument2"
+                style="@style/styleBlackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/indentation_16"
+                android:text="You are interested in: "
+                app:layout_constraintBottom_toBottomOf="@id/ivDocument2"
+                app:layout_constraintStart_toEndOf="@+id/ivDocument2"
+                app:layout_constraintTop_toTopOf="@+id/ivDocument2" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/indentation_4"
+                android:layout_marginTop="@dimen/indentation_12"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivDocument2">
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_width="@dimen/view_params_90"
+                        android:layout_height="@dimen/view_params_90"
+                        android:layout_margin="@dimen/indentation_4"
+                        android:background="@drawable/background_image" />
+
+                    <ImageView
+                        android:layout_width="@dimen/view_params_90"
+                        android:layout_height="@dimen/view_params_90"
+                        android:layout_margin="@dimen/indentation_4"
+                        android:background="@drawable/background_image" />
+
+                    <ImageView
+                        android:layout_width="@dimen/view_params_90"
+                        android:layout_height="@dimen/view_params_90"
+                        android:layout_margin="@dimen/indentation_4"
+                        android:background="@drawable/background_image" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_width="@dimen/view_params_90"
+                        android:layout_height="@dimen/view_params_90"
+                        android:layout_margin="@dimen/indentation_4"
+                        android:background="@drawable/background_image" />
+
+                    <ImageView
+                        android:layout_width="@dimen/view_params_90"
+                        android:layout_height="@dimen/view_params_90"
+                        android:layout_margin="@dimen/indentation_4"
+                        android:background="@drawable/background_image" />
+
+                </TableRow>
+            </TableLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
